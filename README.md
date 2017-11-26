@@ -181,7 +181,13 @@ panel_iframe:
 
 ## Known issues and limitations
 
-Lorem ipsum
+This add-on is currently in an experimental state, and some features are not
+implemented yet. Some of the presently known limitations:
+
+- User and project settings are not persistent between add-on restarts.
+- Auto-completion is based on file contents and does not yet query Home
+  Assistant.
+- `ZSH` is available, but not enabled by default, due to Cloud9 limitations.
 
 ## Changelog & Releases
 
