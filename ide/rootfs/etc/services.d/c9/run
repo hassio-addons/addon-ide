@@ -1,0 +1,33 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: IDE
+# Runs the cloud9 server
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+declare -a c9_options
+
+hass.log.info 'Starting the C9 server'
+
+# Set daemon debug level
+if hass.debug; then
+    c9_options+=(--debug)
+fi
+
+# Add default options
+c9_options+=(--port 80)
+c9_options+=(-w '/workspace')
+c9_options+=(--workspacetype 'homeassistant')
+
+# Add login credentials, when enabled.
+if hass.config.has_value 'username' && hass.config.has_value 'password'; then
+    c9_options+=(--auth)
+    c9_options+=("$(hass.config.get 'username'):$(hass.config.get 'password')")
+fi
+
+# Change working directory
+cd /cloud9 || hass.die 'Unable to change working directory'
+
+# Run the c9 server
+exec node /cloud9/server.js "${c9_options[@]}"
