@@ -1,4 +1,5 @@
 ARG BUILD_FROM=hassioaddons/base-amd64:1.1.0
+# hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Add env
@@ -6,34 +7,35 @@ ENV LANG="C.UTF-8" \
     TERM="xterm-256color"
 
 # Setup base
+# hadolint ignore=DL4001
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        build-base \
-        g++ \
-        libxml2-dev \
-        make \
-        openssl-dev \
-        yarn \
+        build-base=0.5-r0 \
+        g++=6.4.0-r5 \
+        libxml2-dev=2.9.7-r0 \
+        make=4.2.1-r0 \
+        openssl-dev=1.0.2o-r0 \
+        yarn=1.3.2-r0 \
     \
     && apk add --no-cache \
-        bind-tools \
-        git \
-        libxml2-utils \
-        mariadb-client \
-        mosquitto-clients \
-        ncurses \
-        net-tools \
-        nginx \
-        nodejs-current \
-        openssh-client \
-        openssl \
-        py-pip \
-        python \
-        sshfs \
-        sudo \
-        tmux \
-        wget \
-        zsh \
+        bind-tools=9.11.2_p1-r0 \
+        git=2.15.0-r1 \
+        libxml2-utils=2.9.7-r0 \
+        mariadb-client=10.1.32-r0 \
+        mosquitto-clients=1.4.15-r0 \
+        ncurses=6.0_p20171125-r0 \
+        net-tools=1.60_git20140218-r1 \
+        nginx=1.12.2-r3 \
+        nodejs-current=9.2.1-r1 \
+        openssh-client=7.5_p1-r8 \
+        openssl=1.0.2o-r0 \
+        py2-pip=9.0.1-r1 \
+        python2=2.7.14-r2 \
+        sshfs=2.10-r2 \
+        sudo=1.8.21_p2-r1 \
+        tmux=2.6-r0 \
+        wget=1.19.2-r1 \
+        zsh=5.4.2-r1 \
     \
     && pip install yamllint --no-cache-dir \
     \
@@ -42,7 +44,7 @@ RUN \
     && git clone --depth 1 \
         git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
     \
-    && sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd \
+    && sed -i -e "s#bin/ash#bin/zsh#" /etc/passwd \
     \
     && git clone --depth 1 \
         https://github.com/c9/core.git /cloud9 \
