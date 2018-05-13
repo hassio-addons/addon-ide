@@ -46,8 +46,9 @@ RUN \
     \
     && sed -i -e "s#bin/ash#bin/zsh#" /etc/passwd \
     \
-    && git clone --depth 1 \
+    && git clone --branch master --single-branch \
         https://github.com/c9/core.git /cloud9 \
+    && git checkout 15911b3ed65e69efd27d19683a2ac90c69ca4242 \
     \
     && curl -s -L \
         https://raw.githubusercontent.com/c9/install/master/link.sh | bash \
