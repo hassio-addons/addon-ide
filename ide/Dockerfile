@@ -41,7 +41,7 @@ RUN \
     \
     && yarn global add npm@4.6.1 modclean \
     \
-    && git clone --depth 1 \
+    && git clone --branch master --single-branch --depth 1 \
         git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
     \
     && sed -i -e "s#bin/ash#bin/zsh#" /etc/passwd \
