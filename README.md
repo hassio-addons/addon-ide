@@ -313,7 +313,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-ide/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-ide.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [ohmyzsh]: http://ohmyz.sh/
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
