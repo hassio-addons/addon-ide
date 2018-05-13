@@ -299,8 +299,8 @@ SOFTWARE.
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-add-on-ide-based-on-cloud9/33810?u=frenck
 [frenck]: https://github.com/frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-example/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-example/pipelines
+[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-ide/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/hassio-addons/addon-ide/pipelines
 [home-assistant]: https://home-assistant.io
 [i386-anchore-shield]: https://anchore.io/service/badges/image/491da5d9a64e7173746bce5053145c57199e81cbc87f0dfbea9bcab1186b91db
 [i386-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fide-i386%3Alatest
