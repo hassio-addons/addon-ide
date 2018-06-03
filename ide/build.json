@@ -1,8 +1,8 @@
 {
     "squash": false,
     "build_from": {
-        "amd64": "hassioaddons/base-amd64:1.4.1",
-        "i386": "hassioaddons/base-i386:1.4.1"
+        "amd64": "hassioaddons/base-amd64:1.4.2",
+        "i386": "hassioaddons/base-i386:1.4.2"
     },
     "args": {}
 }
