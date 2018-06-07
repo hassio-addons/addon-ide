@@ -46,6 +46,18 @@ comparison to installing any other Hass.io add-on.
 
 ## Docker status
 
+[![Docker Architecture][armhf-arch-shield]][armhf-dockerhub]
+[![Docker Version][armhf-version-shield]][armhf-microbadger]
+[![Docker Layers][armhf-layers-shield]][armhf-microbadger]
+[![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
+[![Anchore Image Overview][armhf-anchore-shield]][armhf-anchore]
+
+[![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
+[![Docker Version][aarch64-version-shield]][aarch64-microbadger]
+[![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
+[![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
+[![Anchore Image Overview][aarch64-anchore-shield]][aarch64-anchore]
+
 [![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
 [![Docker Version][amd64-version-shield]][amd64-microbadger]
 [![Docker Layers][amd64-layers-shield]][amd64-microbadger]
@@ -250,6 +262,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[aarch64-anchore-shield]: https://anchore.io/service/badges/image/3a52e98fc35e238711880453f882da1578f46af2019f705077a1202b633c2b21
+[aarch64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fide-aarch64%3Alatest
+[aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
+[aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/ide-aarch64
+[aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/ide-aarch64.svg
+[aarch64-microbadger]: https://microbadger.com/images/hassioaddons/ide-aarch64
+[aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/ide-aarch64.svg
+[aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/ide-aarch64.svg
 [alpine-packages]: https://pkgs.alpinelinux.org/packages
 [amd64-anchore-shield]: https://anchore.io/service/badges/image/f7a8fc048af61c13119239a4411cead2cf775029eb09f7af3e0a2f5183d0669a
 [amd64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fide-amd64%3Alatest
@@ -259,6 +279,14 @@ SOFTWARE.
 [amd64-microbadger]: https://microbadger.com/images/hassioaddons/ide-amd64
 [amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/ide-amd64.svg
 [amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/ide-amd64.svg
+[armhf-anchore-shield]: https://anchore.io/service/badges/image/8299a0af4020e22be2a2dd91dbc84e39babeae5178680278d51881ffba88d949
+[armhf-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fide-armhf%3Alatest
+[armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
+[armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/ide-armhf
+[armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/ide-armhf.svg
+[armhf-microbadger]: https://microbadger.com/images/hassioaddons/ide-armhf
+[armhf-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/ide-armhf.svg
+[armhf-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/ide-armhf.svg
 [bountysource-shield]: https://img.shields.io/bountysource/team/hassio-addons/activity.svg
 [bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
