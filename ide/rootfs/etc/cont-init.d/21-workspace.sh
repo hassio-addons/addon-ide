@@ -18,6 +18,7 @@ done
 # Symlink workspace setting to data folder
 if ! hass.directory_exists "/data/.c9"; then
     mkdir /data/.c9
+    cp /root/.c9/project.settings /data/.c9/project.settings
 fi
 
 ln -s /data/.c9 /workspace/.c9

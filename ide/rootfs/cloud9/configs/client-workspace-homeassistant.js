@@ -49,7 +49,7 @@ module.exports = function (options) {
     }
 
     if (p.accountUrl && p.accountUrl.includes('c9.io')) {
-      p.accountUrl = 'https://community.home-assistant.io/?u=frenck';
+      p.accountUrl = 'https://community.home-assistant.io/t/community-hass-io-add-on-ide-based-on-cloud9/33810?u=frenck';
     }
 
     if (p.bashBin) {
@@ -61,71 +61,6 @@ module.exports = function (options) {
         break;
 
       case 'plugins/c9.ide.layout.classic/preload':
-        break;
-
-      case 'plugins/c9.core/settings':
-        if (p.settings) {
-          p.settings.user = {
-            ace: {
-              '@theme': 'ace/theme/monokai',
-              '@fontFamily': 'Monaco, Menlo, Ubuntu Mono, Consolas, source-code-pro, monospace',
-              '@showInvisibles': true,
-              '@showLineNumbers': true,
-              '@printMarginColumn': 120,
-            },
-            general: {
-              '@preview-navigate': false,
-              '@preview-tree': false,
-              '@revealfile': true,
-              '@skin': 'flat-light',
-            },
-            projecttree: {
-              '@hiddenFilePattern': '*.db,*.pyc, __pycache__, .*',
-              '@scope': false,
-              '@showhidden': false,
-            },
-            tabs: {
-              '@asterisk': true,
-              '@show': true,
-            },
-            terminal: {
-              '@backgroundColor': '#000000',
-              '@blinking': true,
-              '@foregroundColor': '#d7dde4',
-              '@scrollback': 10000,
-              '@selectionColor': '#97a8b6',
-            },
-            welcome: {
-               '@first': false,
-            }
-          };
-
-          p.settings.project = {
-            ace: {
-                '@tabSize': 2,
-            },
-            run: {
-                configs: {
-                    '@inited': true,
-                    "json()": {
-                        'Check configuration': {
-                            'command': 'hassio homeassistant check',
-                            'default': true,
-                            'name': 'Check Configuration',
-                            'runner': 'Shell command',
-                            'toolbar': true,
-                        },
-                        'Restart Home Assistant': {
-                            'command': 'hassio homeassistant restart',
-                            'name': 'Restart Home Assistant',
-                            'runner': 'Shell command',
-                            'toolbar': true,
-                        },                        
-                    },
-                },
-            }
-          };
-        }
         break;
     }
 
