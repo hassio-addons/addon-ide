@@ -1,0 +1,46 @@
+{
+    "ace": {
+        "@cursorStyle": "smooth slim",
+        "@fontFamily": "Monaco, Menlo, Ubuntu Mono, Consolas, source-code-pro, monospace",
+        "@printMarginColumn": 120,
+        "@showInvisibles": true,
+        "@showLineNumbers": true,
+        "@theme": "ace/theme/monokai",
+        "custom-types": {
+            "json()": {
+                "^searchresults": "c9search"
+            }
+        }
+    },
+    "debug": {
+        "@pause": 0
+    },
+    "general": {
+        "@preview-navigate": false,
+        "@preview-tree": false,
+        "@revealfile": true,
+        "@skin": "flat-light"
+    },
+    "openfiles": {
+        "@show": false
+    },
+    "projecttree": {
+        "@hiddenFilePattern": ".c9,*.db,*.pyc, __pycache__, .*",
+        "@scope": false,
+        "@showhidden": true
+    },
+    "tabs": {
+        "@asterisk": true,
+        "@show": true
+    },
+    "terminal": {
+        "@backgroundColor": "#000000",
+        "@blinking": true,
+        "@foregroundColor": "#d7dde4",
+        "@scrollback": 10000,
+        "@selectionColor": "#97a8b6"
+    },
+    "welcome": {
+        "@first": false
+    }
+}
