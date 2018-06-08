@@ -36,6 +36,7 @@ RUN \
         sudo=1.8.21_p2-r1 \
         tmux=2.6-r0 \
         wget=1.19.5-r0 \
+        zip=3.0-r4 \
         zsh=5.4.2-r1 \
     \
     && pip install yamllint --no-cache-dir \
