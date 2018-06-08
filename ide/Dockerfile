@@ -8,6 +8,7 @@ ENV LANG="C.UTF-8" \
 
 # Setup base
 # hadolint ignore=DL4001
+ARG BUILD_ARCH
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r0 \
@@ -88,7 +89,6 @@ RUN \
 COPY rootfs /
 
 # Build arugments
-ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
