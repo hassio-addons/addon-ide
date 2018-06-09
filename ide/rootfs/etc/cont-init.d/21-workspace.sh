@@ -6,8 +6,6 @@
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
-mkdir /workspace || hass.die 'Unable to create a workspace directory'
-
 readonly -a directories=(addons backup config share ssl)
 
 for dir in "${directories[@]}"; do
@@ -18,8 +16,8 @@ done
 # Symlink workspace setting to data folder
 if ! hass.directory_exists "/data/.c9"; then
     hass.log.debug "Setting up default project settings..."
-    mkdir /data/.c9
-    cp /root/.c9/project.settings /data/.c9/project.settings
+    cp -R /workspace/.c9 /data/.c9
 fi
 
+rm -fr /workspace/.c9
 ln -s /data/.c9 /workspace/.c9
