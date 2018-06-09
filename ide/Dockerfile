@@ -31,6 +31,7 @@ RUN \
         nodejs-current=9.2.1-r1 \
         openssh-client=7.5_p1-r8 \
         openssl=1.0.2o-r0 \
+        pwgen=2.08-r0 \
         py2-pip=9.0.1-r1 \
         python2=2.7.14-r2 \
         sshfs=2.10-r2 \
