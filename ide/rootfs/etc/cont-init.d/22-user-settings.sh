@@ -7,6 +7,7 @@
 source /usr/lib/hassio-addons/base.sh
 
 if ! hass.file_exists "/data/user.settings"; then
+    hass.log.debug "Setting up default user settings..."
     cp /root/.c9/user.settings /data/user.settings
 fi
 

@@ -27,7 +27,7 @@
     "projecttree": {
         "@hiddenFilePattern": ".c9,*.db,*.pyc, __pycache__, .*",
         "@scope": false,
-        "@showhidden": true
+        "@showhidden": false
     },
     "tabs": {
         "@asterisk": true,
