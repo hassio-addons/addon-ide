@@ -32,7 +32,7 @@ RUN \
         openssh-client=7.7_p1-r2 \
         openssl=1.0.2o-r1 \
         pwgen=2.08-r0 \
-        py2-pip=9.0.1-r1 \
+        py2-pip=10.0.1-r0 \
         python2=2.7.14-r2 \
         sqlite=3.21.0-r1 \
         sshfs=2.10-r2 \
