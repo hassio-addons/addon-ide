@@ -21,7 +21,7 @@ RUN \
     && apk add --no-cache \
         bind-tools=9.12.1_p2-r0 \
         git=2.18.0-r0 \
-        libxml2-utils=2.9.7-r0 \
+        libxml2-utils=2.9.8-r0 \
         mariadb-client=10.2.15-r0 \
         mosquitto-clients=1.4.15-r3 \
         ncurses=6.1-r0 \
