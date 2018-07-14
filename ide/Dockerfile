@@ -40,7 +40,7 @@ RUN \
         tmux=2.7-r0 \
         wget=1.19.5-r0 \
         zip=3.0-r5 \
-        zsh=5.4.2-r1 \
+        zsh=5.5.1-r0 \
     \
     && pip install yamllint --no-cache-dir \
     \
