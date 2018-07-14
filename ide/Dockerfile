@@ -28,7 +28,7 @@ RUN \
         net-tools=1.60_git20140218-r2 \
         nginx=1.14.0-r0 \
         nmap=7.70-r1 \
-        nodejs-current=9.2.1-r1 \
+        nodejs-current=9.11.1-r2 \
         openssh-client=7.5_p1-r8 \
         openssl=1.0.2o-r0 \
         pwgen=2.08-r0 \
