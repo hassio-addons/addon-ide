@@ -30,7 +30,7 @@ RUN \
         nmap=7.70-r1 \
         nodejs-current=9.11.1-r2 \
         openssh-client=7.7_p1-r2 \
-        openssl=1.0.2o-r0 \
+        openssl=1.0.2o-r1 \
         pwgen=2.08-r0 \
         py2-pip=9.0.1-r1 \
         python2=2.7.14-r2 \
