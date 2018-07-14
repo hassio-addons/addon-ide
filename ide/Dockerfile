@@ -23,7 +23,7 @@ RUN \
         git=2.15.2-r0 \
         libxml2-utils=2.9.7-r0 \
         mariadb-client=10.2.15-r0 \
-        mosquitto-clients=1.4.15-r0 \
+        mosquitto-clients=1.4.15-r3 \
         ncurses=6.0_p20171125-r0 \
         net-tools=1.60_git20140218-r1 \
         nginx=1.12.2-r3 \
