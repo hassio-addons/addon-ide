@@ -11,12 +11,12 @@ ENV LANG="C.UTF-8" \
 ARG BUILD_ARCH
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        libxml2-dev=2.9.7-r0 \
         make=4.2.1-r0 \
         openssl-dev=1.0.2o-r0 \
         yarn=1.3.2-r0 \
         build-base=0.5-r1 \
         g++=6.4.0-r8 \
+        libxml2-dev=2.9.8-r0 \
     \
     && apk add --no-cache \
         bind-tools=9.11.3-r0 \
