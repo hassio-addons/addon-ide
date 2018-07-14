@@ -27,7 +27,7 @@ RUN \
         ncurses=6.1-r0 \
         net-tools=1.60_git20140218-r2 \
         nginx=1.14.0-r0 \
-        nmap=7.60-r2 \
+        nmap=7.70-r1 \
         nodejs-current=9.2.1-r1 \
         openssh-client=7.5_p1-r8 \
         openssl=1.0.2o-r0 \
