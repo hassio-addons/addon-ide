@@ -1,0 +1,2 @@
+cd /workspace
+exec zsh
