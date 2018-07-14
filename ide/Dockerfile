@@ -37,7 +37,7 @@ RUN \
         sqlite=3.24.0-r0 \
         sshfs=2.10-r2 \
         sudo=1.8.23-r2 \
-        tmux=2.6-r0 \
+        tmux=2.7-r0 \
         wget=1.19.5-r0 \
         zip=3.0-r4 \
         zsh=5.4.2-r1 \
