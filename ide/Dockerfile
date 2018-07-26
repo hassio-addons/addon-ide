@@ -15,7 +15,7 @@ RUN \
         g++=6.4.0-r8 \
         libxml2-dev=2.9.8-r0 \
         make=4.2.1-r2 \
-        openssl-dev=1.0.2o-r1 \
+        openssl-dev=1.0.2o-r2 \
         yarn=1.7.0-r0 \
     \
     && apk add --no-cache \
@@ -30,7 +30,7 @@ RUN \
         nmap=7.70-r1 \
         nodejs-current=9.11.1-r2 \
         openssh-client=7.7_p1-r2 \
-        openssl=1.0.2o-r1 \
+        openssl=1.0.2o-r2 \
         pwgen=2.08-r0 \
         py2-pip=10.0.1-r0 \
         python2=2.7.15-r0 \
