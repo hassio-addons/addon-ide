@@ -58,7 +58,7 @@ RUN \
     \
     && git clone --branch master --single-branch \
         https://github.com/c9/core.git /cloud9 \
-    && git -C /cloud9 checkout d8917f33fd7d32141d895fb7de530cfee2a416cf \
+    && git -C /cloud9 checkout e9490da4e721915df42d1c468ea7c98f879fbb11 \
     \
     && curl -s -L \
         https://raw.githubusercontent.com/c9/install/master/link.sh | bash \
