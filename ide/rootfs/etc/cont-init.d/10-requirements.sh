@@ -15,6 +15,12 @@ if ! hass.config.has_value 'username' && hass.config.has_value 'password'; then
     hass.die 'You have set a password, but no username!'
 fi
 
+# Require a secure password
+if hass.config.has_value 'password' \
+    && ! hass.config.is_safe_password 'password'; then
+    hass.die "Please choose a different SSH password, this one is unsafe!"
+fi
+
 # Check SSL requirements, if enabled
 if hass.config.true 'ssl'; then
     if ! hass.config.has_value 'certfile'; then
