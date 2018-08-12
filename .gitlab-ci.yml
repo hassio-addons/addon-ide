@@ -1,5 +1,5 @@
---
-0mage: docker:latest
+---
+image: docker:latest
 
 variables:
   ADDON_GITHUB_REPO: hassio-addons/addon-ide
