@@ -14,6 +14,8 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
+[![Support my work on Patreon][patreon-shield]][patreon]
+
 Advanced IDE for Home Assistant, based on Cloud9 IDE
 
 ## About
@@ -119,14 +121,14 @@ as well.
 This option allows you to enable authentication on accessing the IDE. Leaving
 it empty would disable the possibility to authenticate completely.
 
-**Note**: _If you set an `username`, `password` becomes mandatory as well._
+**Note**: _This option support secrets, e.g., `!secret ide_username`._
 
 ### Option: `password`
 
 Sets the password to authenticate with. Leaving it empty would disable the
 possibility to authenticate completely.
 
-**Note**: _If you set a `password`, `username` becomes mandatory as well._
+**Note**: _This option support secrets, e.g., `!secret ide_password`._
 
 ### Option: `ssl`
 
@@ -158,6 +160,23 @@ time for the add-on._
 Customize your IDE environment even more with the `init_commands` option.
 Add one or more shell commands to the list, and they will be executed every
 single time this add-on starts.
+
+### Option: `i_like_to_be_pwned`
+
+Adding this option to the add-on configuration allows to you bypass the
+HaveIBeenPwned password requirement by setting it to `true`.
+
+**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
+using this option! USE AT YOUR OWN RISK!_
+
+### Option: `leave_front_door_open`
+
+Adding this option to the add-on configuration allows you to disable
+authentication on the Web Terminal by setting it to `true` and leaving the
+username and password empty.
+
+**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
+only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Embedding into Home Assistant
 
@@ -206,10 +225,11 @@ Got questions?
 
 You have several options to get them answered:
 
-- The Home Assistant [Community Forum][forum], we have a
-  [dedicated topic][forum] on that forum regarding this repository.
-- The Home Assistant [Discord Chat Server][discord] for general Home Assistant
-  discussions and questions.
+- The [Community Hass.io Add-ons Discord chat server][discord] for add-on
+  support and feature requests.
+- The [Home Assistant Discord chat server][discord-ha] for general Home
+  Assistant discussions and questions.
+- The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
 You could also [open an issue here][issue] GitHub.
@@ -294,8 +314,9 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-ide.svg
 [commits]: https://github.com/hassio-addons/addon-ide/commits/master
 [contributors]: https://github.com/hassio-addons/addon-ide/graphs/contributors
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg
-[discord]: https://discord.gg/c5DvZ4e
+[discord-ha]: https://discord.gg/c5DvZ4e
+[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
+[discord]: https://discord.me/hassioaddons
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-add-on-ide-based-on-cloud9/33810?u=frenck
 [frenck]: https://github.com/frenck
@@ -315,6 +336,8 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-ide.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [ohmyzsh]: http://ohmyz.sh/
+[patreon-shield]: https://www.frenck.nl/images/patreon.png
+[patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-ide.svg
