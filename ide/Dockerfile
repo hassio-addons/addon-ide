@@ -6,6 +6,9 @@ FROM ${BUILD_FROM}
 ENV LANG="C.UTF-8" \
     TERM="xterm-256color"
 
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # Setup base
 # hadolint ignore=DL4001
 ARG BUILD_ARCH
