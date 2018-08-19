@@ -37,7 +37,7 @@ fi
 # Require a secure password
 if hass.config.has_value 'password' \
     && ! hass.config.is_safe_password 'password'; then
-    hass.die "Please choose a different SSH password, this one is unsafe!"
+    hass.die "Please choose a different password, this one is unsafe!"
 fi
 
 # Check SSL requirements, if enabled
