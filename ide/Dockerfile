@@ -29,7 +29,7 @@ RUN \
         mosquitto-clients=1.4.15-r3 \
         ncurses=6.1_p20180818-r1 \
         net-tools=1.60_git20140218-r2 \
-        nginx=1.14.0-r0 \
+        nginx=1.14.0-r1 \
         nmap=7.70-r1 \
         nodejs-current=9.11.1-r2 \
         openssh-client=7.7_p1-r2 \
