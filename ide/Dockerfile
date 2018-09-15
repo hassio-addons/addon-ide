@@ -22,7 +22,7 @@ RUN \
         yarn=1.7.0-r0 \
     \
     && apk add --no-cache \
-        bind-tools=9.12.1_p2-r0 \
+        bind-tools=9.12.2_p1-r0 \
         git=2.18.0-r0 \
         libxml2-utils=2.9.8-r0 \
         mariadb-client=10.2.15-r0 \
