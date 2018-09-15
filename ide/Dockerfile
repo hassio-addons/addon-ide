@@ -27,7 +27,7 @@ RUN \
         libxml2-utils=2.9.8-r0 \
         mariadb-client=10.2.15-r0 \
         mosquitto-clients=1.4.15-r3 \
-        ncurses=6.1-r0 \
+        ncurses=6.1_p20180818-r1 \
         net-tools=1.60_git20140218-r2 \
         nginx=1.14.0-r0 \
         nmap=7.70-r1 \
