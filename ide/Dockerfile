@@ -15,7 +15,7 @@ ARG BUILD_ARCH
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
-        g++=6.4.0-r8 \
+        g++=6.4.0-r9 \
         libxml2-dev=2.9.8-r0 \
         make=4.2.1-r2 \
         openssl-dev=1.0.2o-r2 \
