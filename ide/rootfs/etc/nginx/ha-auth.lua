@@ -33,7 +33,7 @@ function authenticate()
     local httpc = http.new()
     local res, err = httpc:request_uri("http://hassio/auth", {
         method = "POST",
-        body = "username=" .. username .. "&password=" .. password,
+        body = ngx.encode_args({["username"]=username, ["password"]=password}),
         headers = {
             ["Content-Type"] = "application/x-www-form-urlencoded",
             ["X-HASSIO-KEY"] = os.getenv("HASSIO_TOKEN"),
