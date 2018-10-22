@@ -6,40 +6,6 @@
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
-# Require authentication
-if ! hass.config.has_value 'username' \
-    && ! ( \
-        hass.config.exists 'leave_front_door_open' \
-        && hass.config.true 'leave_front_door_open' \
-    );
-then
-    hass.die 'You need to set a username!'
-fi
-
-if ! hass.config.has_value 'password' \
-    && ! ( \
-        hass.config.exists 'leave_front_door_open' \
-        && hass.config.true 'leave_front_door_open' \
-    );
-then
-    hass.die 'You need to set a password!';
-fi
-
-# Check if username password as set together
-if hass.config.has_value 'username' && ! hass.config.has_value 'password'; then
-    hass.die 'You have set an username, but no password!'
-fi
-
-if ! hass.config.has_value 'username' && hass.config.has_value 'password'; then
-    hass.die 'You have set a password, but no username!'
-fi
-
-# Require a secure password
-if hass.config.has_value 'password' \
-    && ! hass.config.is_safe_password 'password'; then
-    hass.die "Please choose a different password, this one is unsafe!"
-fi
-
 # Check SSL requirements, if enabled
 if hass.config.true 'ssl'; then
     if ! hass.config.has_value 'certfile'; then

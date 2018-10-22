@@ -20,12 +20,6 @@ c9_options+=(--port 80)
 c9_options+=(-w '/workspace')
 c9_options+=(--workspacetype 'homeassistant')
 
-# Add login credentials, when enabled.
-if hass.config.has_value 'username' && hass.config.has_value 'password'; then
-    c9_options+=(--auth)
-    c9_options+=("$(hass.config.get 'username'):$(hass.config.get 'password')")
-fi
-
 # Change working directory
 cd /cloud9 || hass.die 'Unable to change working directory'
 
