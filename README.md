@@ -81,8 +81,6 @@ Example add-on configuration:
 ```json
 {
   "log_level": "info",
-  "username": "hassio",
-  "password": "changeme",
   "ssl": true,
   "certfile": "fullchain.pem",
   "keyfile": "privkey.pem",
@@ -116,20 +114,6 @@ you are troubleshooting.
 Using `trace` or `debug` log levels puts the cloud9 server into debug mode
 as well.
 
-### Option: `username`
-
-This option allows you to enable authentication on accessing the IDE. Leaving
-it empty would disable the possibility to authenticate completely.
-
-**Note**: _This option support secrets, e.g., `!secret ide_username`._
-
-### Option: `password`
-
-Sets the password to authenticate with. Leaving it empty would disable the
-possibility to authenticate completely.
-
-**Note**: _This option support secrets, e.g., `!secret ide_password`._
-
 ### Option: `ssl`
 
 Enables/Disables SSL (HTTPS) on the IDE. Set it `true` to enable it,
@@ -161,19 +145,10 @@ Customize your IDE environment even more with the `init_commands` option.
 Add one or more shell commands to the list, and they will be executed every
 single time this add-on starts.
 
-### Option: `i_like_to_be_pwned`
-
-Adding this option to the add-on configuration allows to you bypass the
-HaveIBeenPwned password requirement by setting it to `true`.
-
-**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
-using this option! USE AT YOUR OWN RISK!_
-
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
-authentication on the Web Terminal by setting it to `true` and leaving the
-username and password empty.
+authentication on the IDE by setting it to `true`.
 
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_

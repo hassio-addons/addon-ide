@@ -25,10 +25,12 @@ RUN \
         bind-tools=9.12.2_p1-r0 \
         git=2.18.0-r0 \
         libxml2-utils=2.9.8-r0 \
+        lua-resty-http=0.12-r1 \
         mariadb-client=10.2.15-r0 \
         mosquitto-clients=1.4.15-r3 \
         ncurses=6.1_p20180818-r1 \
         net-tools=1.60_git20140218-r2 \
+        nginx-mod-http-lua=1.14.0-r1 \
         nginx=1.14.0-r1 \
         nmap=7.70-r1 \
         nodejs-current=9.11.1-r2 \
