@@ -11,6 +11,11 @@ hass.log.info 'Starting the NGINX daemon'
 # Wait for c9 to become available
 s6-svwait -u -t 5000 /var/run/s6/services/c9
 
+# Disable HA Authentication if front door is open
+if hass.config.true 'leave_front_door_open'; then
+    export DISABLE_HA_AUTHENTICATION=true
+fi
+
 if hass.config.true 'ssl'; then
     exec nginx -c /etc/nginx/nginx-ssl.conf
 else

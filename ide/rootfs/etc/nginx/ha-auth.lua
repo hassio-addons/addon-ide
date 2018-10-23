@@ -3,7 +3,12 @@ local auths = ngx.shared.auths
 
 function authenticate()
 
-    -- Test Authentication header is set and with a value
+    --- Disable authentication
+    if os.getenv('DISABLE_HA_AUTHENTICATION') then
+        return true
+    end
+
+    --- Test Authentication header is set and with a value
     local header = ngx.req.get_headers()['Authorization']
     if header == nil or header:find(" ") == nil then
         return false

@@ -42,7 +42,8 @@
     "certfile": "str",
     "keyfile": "str",
     "packages": ["str"],
-    "init_commands": ["str"]
+    "init_commands": ["str"],
+    "leave_front_door_open": "bool?"
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"

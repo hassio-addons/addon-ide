@@ -145,6 +145,14 @@ Customize your IDE environment even more with the `init_commands` option.
 Add one or more shell commands to the list, and they will be executed every
 single time this add-on starts.
 
+### Option: `leave_front_door_open`
+
+Adding this option to the add-on configuration allows you to disable
+authentication on the IDE by setting it to `true`.
+
+**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
+only exposed to your internal network. USE AT YOUR OWN RISK!_
+
 ## Embedding into Home Assistant
 
 It is possible to embed the IDE directly into Home Assistant, allowing
