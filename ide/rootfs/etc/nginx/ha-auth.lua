@@ -3,11 +3,6 @@ local auths = ngx.shared.auths
 
 function authenticate()
 
-    --- Disable authentication
-    if os.getenv('DISABLE_HA_AUTHENTICATION') then
-        return true
-    end
-
     --- Test Authentication header is set and with a value
     local header = ngx.req.get_headers()['Authorization']
     if header == nil or header:find(" ") == nil then
@@ -34,7 +29,7 @@ function authenticate()
         return true
     end
 
-    --- HTTP request against Hassio API in LUA
+    --- HTTP request against Hassio API
     local httpc = http.new()
     local res, err = httpc:request_uri("http://hassio/auth", {
         method = "POST",
@@ -71,10 +66,17 @@ function authenticate()
     return false
 end
 
-local user = authenticate()
-if not user then
-   ngx.header.content_type = 'text/plain'
-   ngx.header.www_authenticate = 'Basic realm="Home Assistant"'
-   ngx.status = ngx.HTTP_UNAUTHORIZED
-   ngx.say('401 Access Denied')
+-- Only authenticate if its not disabled
+if not os.getenv('DISABLE_HA_AUTHENTICATION') then
+
+    --- Try to authenticate against HA
+    local authenticated = authenticate()
+
+    --- If authentication failed, throw a basic auth
+    if not authenticated then
+       ngx.header.content_type = 'text/plain'
+       ngx.header.www_authenticate = 'Basic realm="Home Assistant"'
+       ngx.status = ngx.HTTP_UNAUTHORIZED
+       ngx.say('401 Access Denied')
+    end
 end
