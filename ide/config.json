@@ -18,6 +18,7 @@
   "auth_api": true,
   "homeassistant_api": true,
   "host_network": false,
+  "auto_uart": true,
   "ports": {
     "8321/tcp": 8321
   },
