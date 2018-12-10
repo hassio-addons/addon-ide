@@ -23,6 +23,7 @@ RUN \
     \
     && apk add --no-cache \
         bind-tools=9.12.3-r0 \
+        colordiff=1.0.18-r0 \
         git=2.18.1-r0 \
         libxml2-utils=2.9.8-r1 \
         lua-resty-http=0.12-r1 \
