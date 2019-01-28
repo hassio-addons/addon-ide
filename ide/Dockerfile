@@ -50,7 +50,7 @@ RUN \
         zsh-syntax-highlighting=0.6.0-r0 \
         zsh=5.5.1-r0 \
     \
-    && pip install yamllint==1.13.0 --no-cache-dir \
+    && pip install yamllint==1.14.0 --no-cache-dir \
     \
     && yarn global add npm@4.6.1 modclean \
     \
