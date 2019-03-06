@@ -55,7 +55,7 @@ RUN \
     && yarn global add npm@4.6.1 modclean \
     \
     && curl -L -s -o /usr/bin/hassio \
-        "https://github.com/home-assistant/hassio-cli/releases/download/2.0.1/hassio_${BUILD_ARCH}" \
+        "https://github.com/home-assistant/hassio-cli/releases/download/2.1.0/hassio_${BUILD_ARCH}" \
     \
     && git clone --branch master --single-branch --depth 1 \
         git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
