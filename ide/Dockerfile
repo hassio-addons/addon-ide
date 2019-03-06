@@ -27,7 +27,7 @@ RUN \
         git=2.18.1-r0 \
         libxml2-utils=2.9.8-r1 \
         lua-resty-http=0.12-r1 \
-        mariadb-client=10.2.19-r1 \
+        mariadb-client=10.2.22-r0 \
         mosquitto-clients=1.4.15-r3 \
         ncurses=6.1_p20180818-r1 \
         net-tools=1.60_git20140218-r2 \
