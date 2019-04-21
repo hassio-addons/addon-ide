@@ -1,17 +1,14 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: IDE
 # Runs the cloud9 server
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 declare -a c9_options
 
-hass.log.info 'Starting the C9 server'
+bashio::log.info 'Starting the C9...'
 
 # Set daemon debug level
-if hass.debug; then
+if bashio::debug; then
     c9_options+=(--debug)
 fi
 
@@ -21,7 +18,7 @@ c9_options+=(-w '/workspace')
 c9_options+=(--workspacetype 'homeassistant')
 
 # Change working directory
-cd /cloud9 || hass.die 'Unable to change working directory'
+cd /cloud9 || bashio::exit.nok 'Unable to change working directory'
 
 # Run the c9 server
 exec node /cloud9/server.js "${c9_options[@]}"
