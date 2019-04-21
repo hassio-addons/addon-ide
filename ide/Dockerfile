@@ -66,8 +66,30 @@ RUN \
         https://github.com/c9/core.git /cloud9 \
     && git -C /cloud9 checkout c4d1c59dc8d6619bdca3dbe740291cd5cd26352c \
     \
-    && curl -s -L \
-        https://raw.githubusercontent.com/c9/install/master/link.sh | bash \
+    && npm set unsafe-perm true \
+    \
+    && npm -g install \
+        node-gyp@3.8.0 \
+    \
+    && mkdir -p /root/.c9/node/bin \
+    && pushd /root/.c9/node/bin \
+    && ln -s "$(command -v node)" node \
+    && ln -s "$(command -v npm)" npm \
+    && popd \
+    \
+    && mkdir -p /root/.c9/bin \
+    && pushd /root/.c9/bin \
+    && ln -sf "$(command -v tmux)" tmux \
+    && popd \
+    \
+    && mkdir -p /root/.c9/node_modules \
+    && pushd /root/.c9 \
+    && npm i https://github.com/risacher/pty.js \
+    && npm i sqlite3@4.0.6 sequelize@2.0.0-beta.0 \
+    && npm i https://github.com/c9/nak/tarball/c9 \
+    && popd \
+    \
+    && echo 1 > /root/.c9/installed \
     \
     && /cloud9/scripts/install-sdk.sh \
     \
