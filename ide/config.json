@@ -23,6 +23,9 @@
   "ports": {
     "8321/tcp": 8321
   },
+  "ports_description": {
+    "8321/tcp": "IDE web interface"
+  },
   "map": [
     "config:rw",
     "ssl:rw",
