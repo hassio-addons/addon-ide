@@ -19,25 +19,5 @@
                 }
             }
         }
-    },
-    "run": {
-        "configs": {
-            "@inited": true,
-            "json()": {
-                "Check configuration": {
-                    "command": "hassio homeassistant check",
-                    "default": true,
-                    "name": "Check Configuration",
-                    "runner": "Shell command",
-                    "toolbar": true
-                },
-                "Restart Home Assistant": {
-                    "command": "hassio homeassistant restart",
-                    "name": "Restart Home Assistant",
-                    "runner": "Shell command",
-                    "toolbar": true
-                }
-            }
-        }
     }
 }
