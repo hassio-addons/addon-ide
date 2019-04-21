@@ -22,7 +22,7 @@ RUN \
         yarn=1.12.3-r0 \
     \
     && apk add --no-cache \
-        bind-tools=9.12.3-r0 \
+        bind-tools=9.12.3_p4-r1 \
         colordiff=1.0.18-r0 \
         git=2.18.1-r0 \
         libxml2-utils=2.9.9-r1 \
