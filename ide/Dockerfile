@@ -38,7 +38,6 @@ RUN \
         openssh-client=7.9_p1-r4 \
         openssl=1.1.1b-r1 \
         pwgen=2.08-r0 \
-        tmux=2.7-r0 \
         wget=1.20.1-r0 \
         zip=3.0-r6 \
         zsh-autosuggestions=0.4.2-r0 \
@@ -47,6 +46,7 @@ RUN \
         sqlite=3.26.0-r3 \
         sshfs=3.5.1-r0 \
         sudo=1.8.25_p1-r2 \
+        tmux=2.8-r0 \
         zsh-syntax-highlighting=0.6.0-r0 \
         zsh=5.5.1-r0 \
     \
