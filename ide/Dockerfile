@@ -38,7 +38,6 @@ RUN \
         openssh-client=7.9_p1-r4 \
         openssl=1.1.1b-r1 \
         pwgen=2.08-r0 \
-        python2=2.7.15-r1 \
         sqlite=3.25.3-r0 \
         sshfs=2.10-r2 \
         sudo=1.8.23-r2 \
@@ -47,6 +46,7 @@ RUN \
         zip=3.0-r6 \
         zsh-autosuggestions=0.4.2-r0 \
         py2-pip=18.1-r0 \
+        python2=2.7.15-r3 \
         zsh-syntax-highlighting=0.6.0-r0 \
         zsh=5.5.1-r0 \
     \
