@@ -18,8 +18,8 @@ RUN \
         g++=8.3.0-r0 \
         libxml2-dev=2.9.9-r1 \
         make=4.2.1-r2 \
-        yarn=1.7.0-r0 \
         openssl-dev=1.1.1b-r1 \
+        yarn=1.12.3-r0 \
     \
     && apk add --no-cache \
         bind-tools=9.12.3-r0 \
