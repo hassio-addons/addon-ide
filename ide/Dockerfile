@@ -35,7 +35,7 @@ RUN \
         nginx=1.14.2-r0 \
         nmap=7.70-r3 \
         nodejs=10.14.2-r0 \
-        openssh-client=7.9_p1-r4 \
+        openssh-client=7.9_p1-r5 \
         openssl=1.1.1b-r1 \
         pwgen=2.08-r0 \
         py2-pip=18.1-r0 \
