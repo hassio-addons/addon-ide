@@ -39,7 +39,7 @@ RUN \
         openssl=1.1.1b-r1 \
         pwgen=2.08-r0 \
         py2-pip=18.1-r0 \
-        python2=2.7.15-r3 \
+        python2=2.7.16-r1 \
         sqlite=3.26.0-r3 \
         sshfs=3.5.1-r0 \
         sudo=1.8.25_p1-r2 \
