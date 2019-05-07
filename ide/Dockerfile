@@ -26,7 +26,7 @@ RUN \
         colordiff=1.0.18-r0 \
         git=2.20.1-r0 \
         libxml2-utils=2.9.9-r1 \
-        lua-resty-http=0.12-r1 \
+        lua-resty-http=0.13-r0 \
         mariadb-client=10.3.13-r0 \
         mosquitto-clients=1.5.6-r0 \
         ncurses=6.1_p20190105-r0 \
