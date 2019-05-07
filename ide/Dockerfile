@@ -31,7 +31,7 @@ RUN \
         mosquitto-clients=1.5.6-r0 \
         ncurses=6.1_p20190105-r0 \
         net-tools=1.60_git20140218-r2 \
-        nginx-mod-http-lua=1.14.2-r0 \
+        nginx-mod-http-lua=1.14.2-r1 \
         nginx=1.14.2-r1 \
         nmap=7.70-r3 \
         nodejs=10.14.2-r0 \
