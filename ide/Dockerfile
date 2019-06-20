@@ -34,7 +34,7 @@ RUN \
         nginx-mod-http-lua=1.14.2-r1 \
         nginx=1.14.2-r1 \
         nmap=7.70-r3 \
-        nodejs=10.14.2-r0 \
+        nodejs=10.16.0-r0 \
         openssh-client=7.9_p1-r5 \
         openssl=1.1.1c-r0 \
         pwgen=2.08-r0 \
