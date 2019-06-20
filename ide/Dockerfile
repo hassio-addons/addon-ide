@@ -16,7 +16,7 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
         g++=8.3.0-r0 \
-        libxml2-dev=2.9.9-r1 \
+        libxml2-dev=2.9.9-r2 \
         make=4.2.1-r2 \
         openssl-dev=1.1.1b-r1 \
         yarn=1.12.3-r0 \
@@ -25,7 +25,7 @@ RUN \
         bind-tools=9.12.4_p1-r1 \
         colordiff=1.0.18-r0 \
         git=2.20.1-r0 \
-        libxml2-utils=2.9.9-r1 \
+        libxml2-utils=2.9.9-r2 \
         lua-resty-http=0.13-r0 \
         mariadb-client=10.3.15-r0 \
         mosquitto-clients=1.5.6-r0 \
