@@ -19,7 +19,7 @@ RUN \
         libxml2-dev=2.9.9-r2 \
         make=4.2.1-r2 \
         openssl-dev=1.1.1c-r0 \
-        yarn=1.12.3-r0 \
+        yarn=1.16.0-r0 \
     \
     && apk add --no-cache \
         bind-tools=9.12.4_p1-r1 \
