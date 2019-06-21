@@ -43,7 +43,7 @@ RUN \
         sqlite=3.28.0-r0 \
         sshfs=3.5.2-r0 \
         sudo=1.8.27-r0 \
-        tmux=2.8-r0 \
+        tmux=2.9a-r0 \
         wget=1.20.3-r0 \
         zip=3.0-r7 \
         zsh-autosuggestions=0.5.0-r0 \
