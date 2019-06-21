@@ -41,7 +41,7 @@ RUN \
         py2-pip=18.1-r0 \
         python2=2.7.16-r1 \
         sqlite=3.28.0-r0 \
-        sshfs=3.5.1-r0 \
+        sshfs=3.5.2-r0 \
         sudo=1.8.25_p1-r2 \
         tmux=2.8-r0 \
         wget=1.20.3-r0 \
