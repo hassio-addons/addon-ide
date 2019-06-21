@@ -46,7 +46,7 @@ RUN \
         tmux=2.9a-r0 \
         wget=1.20.3-r0 \
         zip=3.0-r7 \
-        zsh-autosuggestions=0.5.0-r0 \
+        zsh-autosuggestions=0.6.1-r0 \
         zsh-syntax-highlighting=0.6.0-r0 \
         zsh=5.7.1-r0 \
     \
