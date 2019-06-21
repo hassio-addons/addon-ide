@@ -28,7 +28,7 @@ RUN \
         libxml2-utils=2.9.9-r2 \
         lua-resty-http=0.13-r0 \
         mariadb-client=10.3.16-r0 \
-        mosquitto-clients=1.5.6-r0 \
+        mosquitto-clients=1.6.3-r0 \
         ncurses=6.1_p20190105-r0 \
         net-tools=1.60_git20140218-r2 \
         nginx-mod-http-lua=1.14.2-r1 \
