@@ -42,7 +42,7 @@ RUN \
         python2=2.7.16-r1 \
         sqlite=3.28.0-r0 \
         sshfs=3.5.2-r0 \
-        sudo=1.8.25_p1-r2 \
+        sudo=1.8.27-r0 \
         tmux=2.8-r0 \
         wget=1.20.3-r0 \
         zip=3.0-r7 \
