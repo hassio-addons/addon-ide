@@ -31,8 +31,8 @@ RUN \
         mosquitto-clients=1.6.3-r0 \
         ncurses=6.1_p20190518-r0 \
         net-tools=1.60_git20140218-r2 \
-        nginx-mod-http-lua=1.16.0-r2 \
-        nginx=1.16.0-r2 \
+        nginx-mod-http-lua=1.16.1-r0 \
+        nginx=1.16.1-r0 \
         nmap=7.70-r3 \
         nodejs=10.16.0-r0 \
         openssh-client=8.0_p1-r0 \
