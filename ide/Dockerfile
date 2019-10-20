@@ -40,7 +40,7 @@ RUN \
         pwgen=2.08-r0 \
         py2-pip=18.1-r0 \
         python2=2.7.16-r1 \
-        sqlite=3.28.0-r0 \
+        sqlite=3.28.0-r1 \
         sshfs=3.5.2-r0 \
         sudo=1.8.27-r0 \
         tmux=2.9a-r0 \
