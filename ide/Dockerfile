@@ -33,6 +33,7 @@ RUN \
         net-tools=1.60_git20140218-r2 \
         nginx-mod-http-lua=1.16.1-r1 \
         nginx=1.16.1-r1 \
+        nmap=7.70-r4 \
         nodejs=10.16.3-r0 \
         openssh-client=8.1_p1-r0 \
         openssl=1.1.1d-r0 \
