@@ -41,16 +41,12 @@ editor.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "IDE" add-on.
+1. Search for the "IDE" add-on in the Hass.io add-on store and install it.
 1. Start the "IDE" add-on
 1. Check the logs of the "IDE" add-on to see if everything went well.
 1. Surf to your Hass.io instance and use port `8321`
     (e.g. `http://hassio.local:8321`).
 1. Login using your Home Assistant credentials.
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
