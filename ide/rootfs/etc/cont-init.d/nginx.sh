@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: IDE
+# Home Assistant Community Add-on: IDE
 # Configure the use of SSL in NGINX
 # ==============================================================================
 declare hassio_dns

@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "IDE - Secure Shell - Community Hass.io Add-on for Home Assistant"
+  description: "IDE - Home Assistant Community Add-ons"
   homepage: https://addons.community
-  topics: ide, cloud9-ide, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: ide, cloud9-ide, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false

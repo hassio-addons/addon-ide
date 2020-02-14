@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: IDE
+# Home Assistant Community Add-on: IDE
 # Configures the Cloud9 IDE
 # ==============================================================================
 readonly -a directories=(addons backup config share ssl)
