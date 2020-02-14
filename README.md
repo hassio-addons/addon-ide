@@ -73,17 +73,14 @@ comparison to installing any other Home Assistant add-on.
 
 Example add-on configuration:
 
-```json
-{
-  "log_level": "info",
-  "ssl": true,
-  "certfile": "fullchain.pem",
-  "keyfile": "privkey.pem",
-  "packages": [
-    "php7-cli"
-  ],
-  "init_commands": []
-}
+```yaml
+log_level: info
+ssl: true
+certfile: fullchain.pem
+keyfile: privkey.pem
+packages:
+  - php7-cli
+init_commands: []
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
