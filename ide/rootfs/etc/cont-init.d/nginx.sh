@@ -3,7 +3,7 @@
 # Home Assistant Community Add-on: IDE
 # Configure the use of SSL in NGINX
 # ==============================================================================
-declare hassio_dns
+declare dns_host
 
 bashio::config.require.ssl
 if bashio::config.true 'ssl'; then
@@ -14,6 +14,6 @@ if bashio::config.true 'ssl'; then
     sed -i "s#%%keyfile%%#${keyfile}#g" /etc/nginx/nginx-ssl.conf
 fi
 
-hassio_dns=$(bashio::dns.host)
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/nginx-ssl.conf
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/nginx.conf
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/nginx-ssl.conf
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/nginx.conf
